@@ -1,6 +1,7 @@
 <template>
   <div class="SideNavigation">
     <header class="SideNavigation-HeadingContainer sp-flex">
+      ※検証用サイトです※
       <v-icon
         class="SideNavigation-HeadingIcon pc-none"
         :aria-label="$t('サイドメニュー項目を開く')"
@@ -113,7 +114,7 @@ export default {
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('都内の最新感染動向'),
+          title: this.$t('熊本県内の最新感染動向'),
           link: this.localePath('/')
         },
         {
