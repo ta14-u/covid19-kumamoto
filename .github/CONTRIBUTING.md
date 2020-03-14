@@ -30,16 +30,17 @@
 ## 参考情報
 * [東京都 新型コロナウイルス対策サイトへの貢献方法を解説(Qiita)](https://qiita.com/FPC_COMMUNITY/items/b9cc072813dc2231b2b2)
 
+<!--
 ## CONTRIBUTORS.md への追加について
 ご協力いただいた皆様のお名前（ハンドルネーム）や役割を記す、[CONTRIBUTORS.md](https://github.com/tokyo-metropolitan-gov/covid19/blob/development/CONTRIBUTORS.md) というファイルがあります。
 何かしらの貢献を行った方は、ぜひこちらにもお名前をお載せください。
 [#654](https://github.com/tokyo-metropolitan-gov/covid19/issues/654) の Issue に、掲載名、リンク先（あれば）、役割をコメントください。
+^^>
 
 ## 開発に関する情報
-準備中
+* 開発サイト https://dev-covid19-kumamoto.netlify.com/
 <!--
-* 開発サイト https://dev-covid19-tokyo.netlify.com/
-* ステージングサイト https://stg-covid19-tokyo.netlify.com/
+* ステージングサイト https://stg-covid19-kumamoto.netlify.com/
 * 本番サイト https://stopcovid19.metro.tokyo.lg.jp/
 * [デザイン](https://www.figma.com/file/V7vt80p2gauhdgTZeVNbgj/UI%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=121%3A156)
 * [翻訳スプレッドシート](https://docs.google.com/spreadsheets/d/1avT6QGInyQseYjoc_TxL8RPZfutyvrv4BtJkXfk1Nko)
