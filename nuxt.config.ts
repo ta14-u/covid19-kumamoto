@@ -46,7 +46,7 @@ const config: Configuration = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
+        content: 'https://dev-covid19-kumamoto.netlify.com/ogp.png'
       },
       {
         hid: 'twitter:card',
