@@ -152,9 +152,11 @@ export default {
               const labelArray = [labelTokyo, labelOthers]
               let casesTotal, cases
               if (this.dataKind === 'transition') {
-                casesTotal = sumArray[tooltipItem.index].toLocaleString()
+                // 日別の表示では先頭データを無視するため +1 by C4K
+                casesTotal = sumArray[tooltipItem.index + 1].toLocaleString()
+                // 日別の表示では先頭データを無視するため +1 by C4K
                 cases = data[tooltipItem.datasetIndex][
-                  tooltipItem.index
+                  tooltipItem.index + 1
                 ].toLocaleString()
               } else {
                 casesTotal = cumulativeSumArray[
