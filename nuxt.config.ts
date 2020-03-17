@@ -54,24 +54,9 @@ const config: Configuration = {
         content: 'summary_large_image'
       },
       {
-        hid: 'twitter:site',
-        name: 'twitter:site',
-        content: '@tokyo_bousai'
-      },
-      {
-        hid: 'twitter:creator',
-        name: 'twitter:creator',
-        content: '@tokyo_bousai'
-      },
-      {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
-      },
-      {
-        hid: 'fb:app_id',
-        property: 'fb:app_id',
-        content: '2879625188795443'
+        content: 'https://dev-covid19-kumamoto.netlify.com/ogp.png'
       }
     ],
     link: [
