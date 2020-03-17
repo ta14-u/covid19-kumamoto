@@ -2,7 +2,7 @@
   <v-app class="app">
     <div v-if="loading" class="loader">
       <img src="/logo.png" alt="熊本県" />
-      <scale-loader color="#00A040" />
+      <scale-loader color="#7F0000" />
     </div>
     <div v-else-if="hasNavigation" class="appContainer">
       <div class="naviContainer">
