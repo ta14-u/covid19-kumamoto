@@ -70,6 +70,18 @@ export default Vue.extend({
     hideNavigation(): void {
       this.isOpenNavigation = false
     }
+  },
+  head(): MetaInfo {
+    const { htmlAttrs } = this.$nuxtI18nSeo()
+    return {
+      htmlAttrs,
+      link: [
+        {
+          rel: 'canonical',
+          href: `https://stopcovid19.metro.tokyo.lg.jp${this.$route.path}`
+        }
+      ]
+    }
   }
 })
 </script>
