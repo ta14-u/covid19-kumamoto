@@ -9,8 +9,6 @@
             '検査実施数は、速報値として公開するものであり、後日確定データとして修正される場合があります'
           )
         }}
-        <br />
-        {{ $t('2/26のデータは累積です') }}
       </p>
       <data-selector v-model="dataKind" />
     </template>
@@ -108,12 +106,16 @@ export default {
     displayData() {
       const colorArray = ['#7F0000', '#C60000']
       if (this.dataKind === 'transition') {
+        // 日別では先頭データを削除する(過去の累計値だから) by C4K
+        const labelsMod = this.labels.slice(1, this.labels.length)
         return {
-          labels: this.labels,
+          labels: labelsMod,
           datasets: this.chartData.map((item, index) => {
+            // 日別の表示では先頭データを削除する(過去の累計値だから) by C4K
+            const itemMod = item.slice(1, item.length)
             return {
               label: this.items[index],
-              data: item,
+              data: itemMod,
               backgroundColor: colorArray[index],
               borderWidth: 0
             }
