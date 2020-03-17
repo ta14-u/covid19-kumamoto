@@ -11,7 +11,7 @@
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
-詳しくは[貢献の仕方](./.github/CONTRIBUTING.md)を御覧ください。
+詳しくは[貢献の仕方](./.github/CONTRIBUTING.md)を参照してください。
 
 
 ## 行動原則
@@ -69,4 +69,3 @@ $ docker-compose run --rm app yarn install
 
 `development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://dev-covid19-kumamoto.netlify.com/ が更新されます。
 [![Netlify Status](https://api.netlify.com/api/v1/badges/34abbf2e-7216-4e28-9cfa-726b4980dc04/deploy-status)](https://app.netlify.com/sites/dev-covid19-kumamoto/deploys)
-
