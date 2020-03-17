@@ -70,10 +70,6 @@ export default Vue.extend({
     hideNavigation(): void {
       this.isOpenNavigation = false
     }
-  },
-  head(): MetaInfo {
-   
-   
   }
 })
 </script>
