@@ -9,6 +9,8 @@
             '検査実施数は、速報値として公開するものであり、後日確定データとして修正される場合があります'
           )
         }}
+        <br />
+        {{ $t('2/26のデータは累積です') }}
       </p>
       <data-selector v-model="dataKind" />
     </template>
@@ -143,8 +145,8 @@ export default {
           displayColors: false,
           callbacks: {
             label: tooltipItem => {
-              const labelTokyo = this.$t('都内')
-              const labelOthers = this.$t('その他')
+              const labelTokyo = this.$t('熊本県')
+              const labelOthers = this.$t('熊本市')
               const labelArray = [labelTokyo, labelOthers]
               let casesTotal, cases
               if (this.dataKind === 'transition') {
