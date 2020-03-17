@@ -111,8 +111,8 @@ const config: Configuration = {
       {
         strategy: 'prefix_except_default',
         detectBrowserLanguage: {
-          useCookie: true,
-          cookieKey: 'i18n_redirected'
+          /* useCookie: true,
+          cookieKey: 'i18n_redirected' */
         },
         locales: [
           {
