@@ -1,10 +1,10 @@
-# 熊本県 新型コロナウイルス感染症対策サイト
+# 熊本県【非公式】 新型コロナウイルス感染症対策サイト
 
 ![](https://github.com/codeforkumamoto/covid19/workflows/production%20deploy/badge.svg)
 
-<!--
-[![熊本県 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/1301149/75629392-1d19d900-5c25-11ea-843d-2d4376e3a560.png)](https://stopcovid19.metro.tokyo.lg.jp/)
 
+[![熊本県【非公式】 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/5866690/76852713-42e2e700-688f-11ea-90f4-b8d06971e01a.png)](https://dev-covid19-kumamoto.netlify.com/)
+<!--
 ### 日本語 | [English](./README_EN.md) | [Spanish](./README_ES.md) | [Korean](./README_KO.md) | [Chinese (Taiwan)](./README_ZH_TW.md) | [Chinese (Simplified)](./README_ZH_CN.md) | [Vietnamese](./README_VI.md)
 -->
 
