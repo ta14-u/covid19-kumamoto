@@ -11,7 +11,8 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 熊本県 新型コロナウイルス感染症対策サイト(dev)',
+    titleTemplate:
+      '%s | 熊本県【非公式】新型コロナウイルス感染症対策サイト(dev)',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,12 +20,12 @@ const config: Configuration = {
         hid: 'description',
         name: 'description',
         content:
-          '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、熊本県有志が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、熊本県有志が開設したものです。熊本県から発表された情報を用いていますが、本サイトの運営に関しては熊本県は一切関係しておりません。。'
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '熊本県 新型コロナウイルス感染症対策サイト(dev)'
+        content: '熊本県【非公式】新型コロナウイルス感染症対策サイト(dev)'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -35,13 +36,13 @@ const config: Configuration = {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '熊本県 新型コロナウイルス感染症対策サイト(dev)'
+        content: '熊本県【非公式】新型コロナウイルス感染症対策サイト(dev)'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、熊本県有志が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、熊本県有志が開設したものです。熊本県から発表された情報を用いていますが、本サイトの運営に関しては熊本県は一切関係しておりません。'
       },
       {
         hid: 'og:image',
@@ -206,7 +207,7 @@ const config: Configuration = {
     hardSource: process.env.NODE_ENV === 'development'
   },
   manifest: {
-    name: '熊本県 新型コロナウイルス感染症対策サイト',
+    name: '熊本県【非公式】新型コロナウイルス感染症対策サイト',
     theme_color: '#00a040',
     background_color: '#ffffff',
     display: 'standalone',
