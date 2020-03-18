@@ -1,11 +1,11 @@
 {
   "name": "covid19",
   "version": "1.0.0",
-  "description": "東京都 新型コロナウイルス感染症対策サイト",
-  "author": "東京都",
+  "description": "熊本県 新型コロナウイルス感染症対策サイト",
+  "author": "熊本県",
   "private": true,
   "engines": {
-    "node": "^10.19.0"
+    "node": ">=10.19.0"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt-ts",

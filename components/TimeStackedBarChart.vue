@@ -104,14 +104,18 @@ export default {
       }
     },
     displayData() {
-      const colorArray = ['#00A040', '#00D154']
+      const colorArray = ['#7F0000', '#C60000']
       if (this.dataKind === 'transition') {
+        // 日別では先頭データを削除する(過去の累計値だから) by C4K
+        const labelsMod = this.labels.slice(1, this.labels.length)
         return {
-          labels: this.labels,
+          labels: labelsMod,
           datasets: this.chartData.map((item, index) => {
+            // 日別の表示では先頭データを削除する(過去の累計値だから) by C4K
+            const itemMod = item.slice(1, item.length)
             return {
               label: this.items[index],
-              data: item,
+              data: itemMod,
               backgroundColor: colorArray[index],
               borderWidth: 0
             }
@@ -143,14 +147,16 @@ export default {
           displayColors: false,
           callbacks: {
             label: tooltipItem => {
-              const labelTokyo = this.$t('都内')
-              const labelOthers = this.$t('その他')
+              const labelTokyo = this.$t('熊本県')
+              const labelOthers = this.$t('熊本市')
               const labelArray = [labelTokyo, labelOthers]
               let casesTotal, cases
               if (this.dataKind === 'transition') {
-                casesTotal = sumArray[tooltipItem.index].toLocaleString()
+                // 日別の表示では先頭データを無視するため +1 by C4K
+                casesTotal = sumArray[tooltipItem.index + 1].toLocaleString()
+                // 日別の表示では先頭データを無視するため +1 by C4K
                 cases = data[tooltipItem.datasetIndex][
-                  tooltipItem.index
+                  tooltipItem.index + 1
                 ].toLocaleString()
               } else {
                 casesTotal = cumulativeSumArray[
