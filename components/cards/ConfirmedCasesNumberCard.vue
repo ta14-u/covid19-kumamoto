@@ -1,13 +1,12 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('陽性患者数')"
+      :title="$t('陽性患者数(仮データ)')"
       :title-id="'number-of-confirmed-cases'"
       :chart-id="'time-bar-chart-patients'"
       :chart-data="patientsGraph"
       :date="Data.patients.date"
       :unit="$t('人')"
-      :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'"
     />
   </v-col>
 </template>

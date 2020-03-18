@@ -11,7 +11,8 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 東京都 新型コロナウイルス感染症対策サイト',
+    titleTemplate:
+      '%s | 熊本県【非公式】新型コロナウイルス感染症対策サイト(dev)',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,34 +20,34 @@ const config: Configuration = {
         hid: 'description',
         name: 'description',
         content:
-          '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、東京都が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、熊本県有志が開設したものです。熊本県から発表された情報を用いていますが、本サイトの運営に関しては熊本県は一切関係しておりません。。'
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '東京都 新型コロナウイルス感染症対策サイト'
+        content: '熊本県【非公式】新型コロナウイルス感染症対策サイト(dev)'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp'
+        content: 'https://dev-covid19-kumamoto.netlify.com/'
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '東京都 新型コロナウイルス感染症対策サイト'
+        content: '熊本県【非公式】新型コロナウイルス感染症対策サイト(dev)'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、東京都が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、熊本県有志が開設したものです。熊本県から発表された情報を用いていますが、本サイトの運営に関しては熊本県は一切関係しておりません。'
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
+        content: 'https://dev-covid19-kumamoto.netlify.com/ogp.png'
       },
       {
         hid: 'twitter:card',
@@ -54,24 +55,9 @@ const config: Configuration = {
         content: 'summary_large_image'
       },
       {
-        hid: 'twitter:site',
-        name: 'twitter:site',
-        content: '@tokyo_bousai'
-      },
-      {
-        hid: 'twitter:creator',
-        name: 'twitter:creator',
-        content: '@tokyo_bousai'
-      },
-      {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
-      },
-      {
-        hid: 'fb:app_id',
-        property: 'fb:app_id',
-        content: '2879625188795443'
+        content: 'https://dev-covid19-kumamoto.netlify.com/ogp.png'
       }
     ],
     link: [
@@ -126,35 +112,35 @@ const config: Configuration = {
       {
         strategy: 'prefix_except_default',
         detectBrowserLanguage: {
-          useCookie: true,
-          cookieKey: 'i18n_redirected'
+          /* useCookie: true,
+          cookieKey: 'i18n_redirected' */
         },
         locales: [
           {
             code: 'ja',
             name: '日本語',
             iso: 'ja-JP'
-          },
-          {
-            code: 'en',
-            name: 'English',
-            iso: 'en-US'
-          },
-          {
-            code: 'zh-cn',
-            name: '簡体字',
-            iso: 'zh-CN'
-          },
-          {
-            code: 'zh-tw',
-            name: '繁體字',
-            iso: 'zh-TW'
-          },
-          {
-            code: 'ko',
-            name: '한국어',
-            iso: 'ko-KR'
-          },
+          }
+          // {
+          //   code: 'en',
+          //   name: 'English',
+          //   iso: 'en-US'
+          // },
+          // {
+          //   code: 'zh-cn',
+          //   name: '簡体字',
+          //   iso: 'zh-CN'
+          // },
+          // {
+          //   code: 'zh-tw',
+          //   name: '繁體字',
+          //   iso: 'zh-TW'
+          // },
+          // {
+          //   code: 'ko',
+          //   name: '한국어',
+          //   iso: 'ko-KR'
+          // },
           // ,
           // #1126, #872 (comment)
           // ポルトガル語は訳が揃っていないため非表示
@@ -164,11 +150,11 @@ const config: Configuration = {
           //   name: 'Portuguese',
           //   iso: 'pt-BR'
           // },
-          {
-            code: 'ja-basic',
-            name: 'やさしい にほんご',
-            iso: 'ja-JP'
-          }
+          // {
+          //   code: 'ja-basic',
+          //   name: 'やさしい にほんご',
+          //   iso: 'ja-JP'
+          // }
         ],
         defaultLocale: 'ja',
         vueI18n: {
@@ -198,7 +184,7 @@ const config: Configuration = {
     }
   },
   googleAnalytics: {
-    id: 'UA-159417676-1'
+    id: 'UA-160602620-1'
   },
   build: {
     postcss: {
@@ -221,7 +207,7 @@ const config: Configuration = {
     hardSource: process.env.NODE_ENV === 'development'
   },
   manifest: {
-    name: '東京都 新型コロナウイルス感染症対策サイト',
+    name: '熊本県【非公式】新型コロナウイルス感染症対策サイト',
     theme_color: '#00a040',
     background_color: '#ffffff',
     display: 'standalone',
