@@ -60,9 +60,8 @@ $ docker-compose run --rm app yarn install
 ### ステージング・本番環境への反映
 
 本番環境は準備中
-<!--
-`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://stopcovid19.metro.tokyo.lg.jp/ が更新されます。
--->
+
+`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://stop-covid19-kumamoto.netlify.com/ が更新されます。[![Netlify Status](https://api.netlify.com/api/v1/badges/5c668027-b024-4369-892a-de25f52a5f51/deploy-status)](https://app.netlify.com/sites/stop-covid19-kumamoto/deploys)
 
 `staging` ブランチがアップデートされると、自動的に `gh-pages` ブランチにHTML類がbuildされます。そして、ステージングサイト https://stg-covid19-kumamoto.netlify.com/ が更新されます。[![Netlify Status](https://api.netlify.com/api/v1/badges/a2898428-a455-49c9-88a3-53b44a4eeab0/deploy-status)](https://app.netlify.com/sites/stg-covid19-kumamoto/deploys)
 

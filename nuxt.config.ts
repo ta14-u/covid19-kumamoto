@@ -30,7 +30,7 @@ const config: Configuration = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stg-covid19-kumamoto.netlify.com/'
+        content: 'https://stop-covid19-kumamoto.netlify.com/'
       },
       {
         hid: 'og:title',
@@ -46,7 +46,7 @@ const config: Configuration = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stg-covid19-kumamoto.netlify.com/ogp.png'
+        content: 'https://stop-covid19-kumamoto.netlify.com/ogp.png'
       },
       {
         hid: 'twitter:card',
@@ -56,7 +56,7 @@ const config: Configuration = {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://stg-covid19-kumamoto.netlify.com/ogp.png'
+        content: 'https://stop-covid19-kumamoto.netlify.com/ogp.png'
       }
     ],
     link: [
