@@ -8,7 +8,9 @@
     <whats-new class="mb-4" :items="newsItems" />
     <static-info
       class="mb-4"
-      :url="localePath('/flow')"
+      :url="
+        'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=55&flid=223755'
+      "
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('相談の手順を見る')"
     />
@@ -39,10 +41,10 @@ import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsC
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
-import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-import MetroCard from '@/components/cards/MetroCard.vue'
-import AgencyCard from '@/components/cards/AgencyCard.vue'
+// import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
+// import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
+// import MetroCard from '@/components/cards/MetroCard.vue'
+// import AgencyCard from '@/components/cards/AgencyCard.vue'
 
 export default {
   components: {
@@ -52,11 +54,11 @@ export default {
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    TestedNumberCard,
-    TelephoneAdvisoryReportsNumberCard,
-    ConsultationDeskReportsNumberCard,
-    MetroCard,
-    AgencyCard
+    TestedNumberCard
+    // TelephoneAdvisoryReportsNumberCard,
+    // ConsultationDeskReportsNumberCard,
+    // MetroCard,
+    // AgencyCard
   },
   data() {
     // 退院者グラフ
@@ -72,7 +74,7 @@ export default {
       dischargesGraph,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: this.$t('都内の最新感染動向'),
+        title: this.$t('熊本県内の最新感染動向'),
         date: Data.lastUpdate
       },
       newsItems: News.newsItems
@@ -81,7 +83,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('都内の最新感染動向')
+      title: this.$t('熊本県内の最新感染動向')
     }
   }
 }
