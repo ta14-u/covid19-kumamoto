@@ -1,8 +1,8 @@
 <template>
   <v-app class="app">
     <div v-if="loading" class="loader">
-      <img src="/logo.svg" alt="東京都" />
-      <scale-loader color="#00A040" />
+      <img src="/logo.png" alt="熊本県" />
+      <scale-loader color="#7F0000" />
     </div>
     <div v-else-if="hasNavigation" class="appContainer">
       <div class="naviContainer">
@@ -92,7 +92,6 @@ export default Vue.extend({
   background-color: inherit !important;
 }
 .embed {
-
   .container {
     padding: 0 !important;
   }
@@ -128,6 +127,9 @@ export default Vue.extend({
     overflow-y: auto;
     width: 240px;
     height: 100%;
+    border-right: 1px solid $gray-4;
+    border-left: 1px solid $gray-4;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
     overscroll-behavior: contain;
   }
 }
