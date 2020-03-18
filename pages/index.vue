@@ -9,7 +9,7 @@
     <static-info
       class="mb-4"
       :url="
-        'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=55&flid=223755'
+        'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=67&flid=226255'
       "
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('相談の手順を見る')"
