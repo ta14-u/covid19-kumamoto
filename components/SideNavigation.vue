@@ -123,7 +123,7 @@ export default {
           title: this.$t('【県】新型コロナウイルス感染症が心配なときに'),
           // link: this.localePath('/flow'),
           link:
-            'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=55&flid=223755',
+            'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=67&flid=226255',
           divider: true
         },
         {
