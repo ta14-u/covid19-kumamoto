@@ -9,7 +9,6 @@
         mdi-menu
       </v-icon>
       <nuxt-link :to="localePath('/')" class="SideNavigation-HeadingLink">
-        <h1>※検証用サイトです※</h1>
         <h1 class="SideNavigation-Heading">
           <div class="SideNavigation-Logo">
             <img src="/logo.png" :alt="$t('熊本県')" />
