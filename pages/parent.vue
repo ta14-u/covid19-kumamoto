@@ -28,8 +28,8 @@ export default {
               '不特定多数の人の集まる場所等への外出を避け、基本的に自宅で過ごしてください。'
             ),
             this.$t('手洗い、咳エチケット等により、感染予防に努めてください。'),
-            '<a href="https://tokyodouga.jp/lViN9C_BS-0.html" target="_blank" rel="noopener">' +
-              this.$t('【参考】感染症予防のための正しい手洗い方法（動画）') +
+            '<a href="http://www.city.kumamoto.jp/common/UploadFileDsp.aspx?c_id=5&id=26562&sub_id=32&flid=194113" target="_blank" rel="noopener">' +
+              this.$t('【参考】感染症予防のための正しい手洗い方法') +
               '</a>',
             this.$t(
               '規則正しい生活を心がけ、日常の健康管理に十分気を付けてください。'
@@ -41,7 +41,7 @@ export default {
           body: [
             this.$t('各保健所にご相談ください'),
             this.$t('「新型コロナウイルス感染症にかかる相談窓口について」'),
-            '<a href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html" target="_blank" rel="noopener">https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html</a>'
+            '<a href="https://www.pref.kumamoto.jp/hpkiji/pub/List.aspx?c_id=3&class_set_id=1&class_id=7058" target="_blank" rel="noopener">https://www.pref.kumamoto.jp/hpkiji/pub/List.aspx?c_id=3&class_set_id=1&class_id=7058</a>'
           ].join('<br />')
         },
         {
