@@ -163,10 +163,10 @@ export default {
         //   link:
         //     'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
         // },
-        {
-          title: this.$t('【県】知事からのメッセージ'),
-          link: 'https://www.pref.kumamoto.jp/kiji_31025.html'
-        },
+        // {
+        //   title: this.$t('【県】知事からのメッセージ'),
+        //   link: 'https://www.pref.kumamoto.jp/kiji_31025.html'
+        // },
         {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
