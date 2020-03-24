@@ -82,7 +82,10 @@ export default {
       Data.inspections_summary.data['熊本県'],
       Data.inspections_summary.data['熊本市']
     ]
-    const inspectionsItems = [this.$t('県検査分'), this.$t('熊本市検査分')]
+    const inspectionsItems = [
+      this.$t('県検査分(熊本市を除く)'),
+      this.$t('熊本市検査分')
+    ]
     const inspectionsLabels = Data.inspections_summary.labels
 
     const data = {
