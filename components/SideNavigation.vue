@@ -170,7 +170,12 @@ export default {
         // },
         {
           title: this.$t('当サイトについて'),
-          link: this.localePath('/about')
+          link: this.localePath('/about'),
+          divider: true
+        },
+        {
+          title: this.$t('※当サイトは熊本県内の有志が開設したものです'),
+          divider: true
         }
       ]
     },
