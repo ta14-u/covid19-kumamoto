@@ -10,11 +10,37 @@
         )
       }}<br />
       <br />
+      <a
+        href="https://stopcovid19.metro.tokyo.lg.jp/"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ $t('東京都公式新型コロナウイルス対策サイト') }}
+      </a>
+      の仕組みを利用しています。<br />
+      <br />
       {{
         $t(
           '熊本県による公式情報と客観的な数値をわかりやすく伝えることで、熊本県にお住まいの方や、熊本県内に拠点を持つ企業の方、熊本県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
         )
-      }}
+      }}<br />
+      <br />
+      {{ $t('製作者:') }}
+      <a
+        href="https://www.facebook.com/makoragi"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ $t('Makoto Sakuragi') }}
+      </a>
+      {{ $t(' / ') }}
+      <a
+        href="https://www.facebook.com/groups/CodeForKumamoto/"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ $t('Code for Kumamoto') }}
+      </a>
     </TextCard>
     <TextCard :title="$t('公開期限と更新について')">
       {{

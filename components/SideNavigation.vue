@@ -54,13 +54,13 @@
           >
             <img src="/line.png" alt="LINE" />
           </a> -->
-          <a
+          <!-- <a
             href="https://twitter.com/KumamotoPre_koh"
             target="_blank"
             rel="noopener"
           >
             <img src="/twitter.png" alt="Twitter" />
-          </a>
+          </a> -->
           <!-- <a
             href="https://www.facebook.com/tochokoho"
             target="_blank"
@@ -170,7 +170,12 @@ export default {
         // },
         {
           title: this.$t('当サイトについて'),
-          link: this.localePath('/about')
+          link: this.localePath('/about'),
+          divider: true
+        },
+        {
+          title: this.$t('※当サイトは熊本県内の有志が開設したものです'),
+          divider: true
         }
       ]
     },
