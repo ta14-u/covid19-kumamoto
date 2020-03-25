@@ -67,4 +67,3 @@ $ docker-compose run --rm app yarn install
 
 `development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://dev-covid19-kumamoto.netlify.com/ が更新されます。
 [![Netlify Status](https://api.netlify.com/api/v1/badges/34abbf2e-7216-4e28-9cfa-726b4980dc04/deploy-status)](https://app.netlify.com/sites/dev-covid19-kumamoto/deploys)
-
