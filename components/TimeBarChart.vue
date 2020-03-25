@@ -107,17 +107,19 @@ export default {
     },
     displayData() {
       if (this.dataKind === 'transition') {
+        // 日別では先頭データを削除する(過去の累計値だから) by C4K
+        const chartDataMod = this.chartData.slice(1, this.chartData.length)
         return {
-          labels: this.chartData.map(d => {
+          labels: chartDataMod.map(d => {
             return d.label
           }),
           datasets: [
             {
               label: this.dataKind,
-              data: this.chartData.map(d => {
+              data: chartDataMod.map(d => {
                 return d.transition
               }),
-              backgroundColor: '#00B849',
+              backgroundColor: '#7F0000',
               borderWidth: 0
             }
           ]
@@ -133,7 +135,7 @@ export default {
             data: this.chartData.map(d => {
               return d.cumulative
             }),
-            backgroundColor: '#00B849',
+            backgroundColor: '#7F0000',
             borderWidth: 0
           }
         ]
@@ -246,7 +248,8 @@ export default {
       const yAxisMax = 1.2
       const dataKind =
         this.dataKind === 'transition' ? 'transition' : 'cumulative'
-      const values = this.chartData.map(d => d[dataKind])
+      const chartDataMod = this.chartData.slice(1, this.chartData.length)
+      const values = chartDataMod.map(d => d[dataKind])
       return Math.max(...values) * yAxisMax
     }
   },

@@ -17,6 +17,9 @@
           {{ $t('トップページへ戻る') }}
         </NuxtLink>
       </div>
+      <div class="Error-ImageContainer">
+        <img src="/covid19_kumamoto_amabie_red.png" :alt="$t('アマビエ')" />
+      </div>
     </div>
   </div>
 </template>
@@ -76,6 +79,10 @@ export default Vue.extend({
     max-width: 300px;
     width: 100%;
     font-weight: bold;
+  }
+  &-ImageContainer {
+    margin-top: 24px;
+    text-align: center;
   }
 }
 </style>

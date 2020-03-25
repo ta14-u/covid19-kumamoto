@@ -14,7 +14,9 @@
           <div class="SideNavigation-Logo">
             <img src="/logo.png" :alt="$t('熊本県')" />
           </div>
-          {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
+          {{ $t('【非公式】新型コロナウイルス感染症') }}<br />{{
+            $t('対策サイト')
+          }}
         </h1>
       </nuxt-link>
     </header>
@@ -40,7 +42,7 @@
           </v-container>
         </v-list>
         <div class="SideNavigation-LanguageMenu">
-          <LanguageSelector />
+          <!-- <LanguageSelector /> -->
         </div>
       </nav>
       <v-footer class="SideNavigation-Footer">
@@ -52,13 +54,13 @@
           >
             <img src="/line.png" alt="LINE" />
           </a> -->
-          <a
+          <!-- <a
             href="https://twitter.com/KumamotoPre_koh"
             target="_blank"
             rel="noopener"
           >
             <img src="/twitter.png" alt="Twitter" />
-          </a>
+          </a> -->
           <!-- <a
             href="https://www.facebook.com/tochokoho"
             target="_blank"
@@ -96,12 +98,12 @@
 
 <script>
 import ListItem from '@/components/ListItem'
-import LanguageSelector from '@/components/LanguageSelector.vue'
+// import LanguageSelector from '@/components/LanguageSelector.vue'
 
 export default {
   components: {
-    ListItem,
-    LanguageSelector
+    ListItem
+    /* LanguageSelector */
   },
   props: {
     isNaviOpen: {
@@ -119,11 +121,15 @@ export default {
         },
         {
           icon: 'covid',
-          title: this.$t('新型コロナウイルス感染症が心配なときに'),
+          title: this.$t('【県】新型コロナウイルス感染症が心配なときに'),
           // link: this.localePath('/flow'),
           link:
-            'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=55&flid=223755',
+            'https://www.pref.kumamoto.jp/common/UploadFileOutput.ashx?c_id=3&id=30386&sub_id=67&flid=226255',
           divider: true
+        },
+        {
+          title: this.$t('【県】熊本県公式ホームページ'),
+          link: 'https://www.pref.kumamoto.jp/'
         },
         {
           icon: 'parent',
@@ -132,13 +138,13 @@ export default {
         },
         {
           icon: 'mdi-account-multiple',
-          title: this.$t('県民の皆様へ'),
+          title: this.$t('【県】県民の皆様へ'),
           link:
             'https://www.pref.kumamoto.jp/hpkiji/pub/List.aspx?c_id=3&class_set_id=1&class_id=7057'
         },
         {
           icon: 'mdi-domain',
-          title: this.$t('事業者の皆様へ'),
+          title: this.$t('【県】事業者の皆様へ'),
           link:
             'https://www.pref.kumamoto.jp/hpkiji/pub/List.aspx?c_id=3&class_set_id=1&class_id=7054'
         },
@@ -158,17 +164,17 @@ export default {
         //   link:
         //     'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
         // },
-        {
-          title: this.$t('知事からのメッセージ'),
-          link: 'https://www.pref.kumamoto.jp/kiji_31025.html'
-        },
+        // {
+        //   title: this.$t('【県】知事からのメッセージ'),
+        //   link: 'https://www.pref.kumamoto.jp/kiji_31025.html'
+        // },
         {
           title: this.$t('当サイトについて'),
-          link: this.localePath('/about')
+          link: this.localePath('/about'),
+          divider: true
         },
         {
-          title: this.$t('熊本県公式ホームページ'),
-          link: 'https://www.pref.kumamoto.jp/',
+          title: this.$t('※当サイトは熊本県内の有志が開設したものです'),
           divider: true
         }
       ]
