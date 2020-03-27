@@ -198,7 +198,7 @@ export default {
   .SideNavigation-Logo{
     width:auto !important;
   }
-  &-img {
+  .SideNavigation-Logo img {
     width: 70px;
   }
 }
