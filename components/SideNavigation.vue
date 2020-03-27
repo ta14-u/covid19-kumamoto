@@ -9,10 +9,10 @@
         mdi-menu
       </v-icon>
       <nuxt-link :to="localePath('/')" class="SideNavigation-HeadingLink">
+        <div class="SideNavigation-Logo">
+          <img src="/logo.png" :alt="$t('熊本県')" />
+        </div>
         <h1 class="SideNavigation-Heading">
-          <div class="SideNavigation-Logo">
-            <img src="/logo.png" :alt="$t('熊本県')" />
-          </div>
           {{ $t('【非公式】新型コロナウイルス感染症') }}<br />{{
             $t('対策サイト')
           }}
@@ -192,7 +192,16 @@ export default {
   }
 }
 </script>
-
+<style>
+@media screen and (max-width: 600px) {
+  .SideNavigation-Logo {
+    width: auto !important;
+  }
+  .SideNavigation-Logo img {
+    width: 70px;
+  }
+}
+</style>
 <style lang="scss" scoped>
 .SideNavigation {
   position: relative;
