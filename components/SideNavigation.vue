@@ -9,10 +9,10 @@
         mdi-menu
       </v-icon>
       <nuxt-link :to="localePath('/')" class="SideNavigation-HeadingLink">
-        <h1 class="SideNavigation-Heading">
           <div class="SideNavigation-Logo">
             <img src="/logo.png" :alt="$t('熊本県')" />
           </div>
+          <h1 class="SideNavigation-Heading">
           {{ $t('【非公式】新型コロナウイルス感染症') }}<br />{{
             $t('対策サイト')
           }}
