@@ -192,7 +192,7 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style>
 @media screen and (max-width:600px){
   .SideNavigation-Logo{
     width:auto !important;
@@ -201,6 +201,8 @@ export default {
     width:70px;
   }
 }
+</style>
+<style lang="scss" scoped>
 .SideNavigation {
   position: relative;
   height: 100%;
