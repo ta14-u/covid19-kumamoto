@@ -193,12 +193,12 @@ export default {
 }
 </script>
 <style>
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .SideNavigation-Logo{
-    width:auto !important;
+    width: auto !important;
   }
   .SideNavigation-Logo img {
-    width:70px;
+    width: 70px;
   }
 }
 </style>
