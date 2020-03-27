@@ -194,7 +194,7 @@ export default {
 </script>
 <style>
 @media screen and (max-width: 600px) {
-  .SideNavigation-Logo{
+  .SideNavigation-Logo {
     width: auto !important;
   }
   .SideNavigation-Logo img {
